@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.masthead {
+  padding-top: 100px;
+  height: 400px;
+  background: url("http://i296.photobucket.com/albums/mm197/Greg_Lindahl/background_zpsmfewzkdr.jpeg") no-repeat center / cover; 
+  border-top: 20px solid #FDDC5E;
+}
+
+.masthead-intro {
+  color: rgba(255, 255, 255, .8);
+  font-size: 2.25rem; /* 36px/16px */
+  text-align: center;
+}
+
+.masthead-heading { 
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 6rem; /* 80px/16px  */
+  color: rgba(255, 255, 255, .6);
+  text-shadow: 2px 2px 8px #FDDC5E;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #FDDC5E;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #914C46;
+}
+
+a:hover {
+  color: #FDDC5E;
+}
+
+a:active {
+  color: #FFA96E;
+}
+
+/* Main Styles --------------------- */
+
+.primary-content {
+	padding-top: 25px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+.hobby-question {
+  color: #FFA96E;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.main-footer {
+  text-align: center;
+  color: #fff;
+}
+
+footer ul {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.main-footer {
+  background: #FC7E60;
+  height: 150px;
+  width: 100%;
+  margin-top: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 10px solid #ffa949;
+}
+
+/* Media Queries ------------------ */
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+        height: 50%;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .main-footer {
+      height: 50%;
+      padding: 20px;
+    }
+}
+
