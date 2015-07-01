@@ -3,6 +3,25 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
 .masthead {
   padding-top: 100px;
   height: 400px;
@@ -11,19 +30,71 @@ body {
 }
 
 .masthead-intro {
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 169, 110, .8);
   font-size: 2.25rem; /* 36px/16px */
   text-align: center;
+
+  animation-duration: .5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
 }
 
 .masthead-heading { 
   font-family: "Gentium Book Basic", Georgia, serif;
-  font-size: 6rem; /* 80px/16px  */
+  font-size: 5rem; /* 80px/16px  */
   color: rgba(255, 255, 255, .6);
   text-shadow: 2px 2px 8px #FDDC5E;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
+
+  animation-duration: .5s;
+  animation-name: fadeAndScale;
+  animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* Navigation ------------------ */
+
+nav {
+  text-align: center;
+  padding: 10px 0 10px 15px;
+  margin: 20px 0 0;
+  position: relative;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding:0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+nav a:visited {
+  color: #E87E58;
+}
+
+nav a:hover {
+  color: #FFE2BA;
 }
 
 /* Pseudo-classes ------------------ */
@@ -38,7 +109,7 @@ a:visited {
 }
 
 a:hover {
-  color: #FDDC5E;
+  color: #FFE2BA;
 }
 
 a:active {
@@ -47,7 +118,8 @@ a:active {
 
 /* Main Styles --------------------- */
 
-.primary-content {
+.primary-content,
+.portfolio-content {
 	padding-top: 25px;
   letter-spacing: 0.05em;
   font-weight: 300;
@@ -78,12 +150,31 @@ footer li {
 
 /* Layout Styles ------------------ */
 
-.primary-content {
+.primary-content,
+.portfolio-content {
   width: 75%;
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
   max-width: 600px;
+}
+
+.portfolio-content img {
+  max-height: 150px;
+}
+
+.portfolio-content ul {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.portfolio-content li {
+  display: inline-block;
+  float: left;
+  width: 45%;
+  margin: 2.5%;
 }
 
 .main-footer {
@@ -94,7 +185,12 @@ footer li {
   padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 10px solid #ffa949;
+  clear: both;
 }
+
+/* Animations ------------------ */
+
+
 
 /* Media Queries ------------------ */
 
