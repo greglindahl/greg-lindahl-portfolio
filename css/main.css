@@ -1,26 +1,19 @@
+/* Global Styles ------------------ */
+
 body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
 }
 
 a {
   text-decoration: none;
 }
 
-
 img {
   max-width: 100%;
-}
+} 
 
-h3 {
-  margin: 0 0 1em 0;
-}
+/* Header Styles ------------------ */
 
 .masthead {
   padding-top: 100px;
@@ -137,14 +130,14 @@ a:active {
   color: #fff;
 }
 
-footer ul {
+.main-footer ul {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
   list-style: none;
 }
 
-footer li {
+.main-footer li {
   display: inline-block;
 }
 
@@ -188,10 +181,6 @@ footer li {
   clear: both;
 }
 
-/* Animations ------------------ */
-
-
-
 /* Media Queries ------------------ */
 
 @media only screen and (max-width: 500px) {
@@ -204,8 +193,15 @@ footer li {
     }
 }
 
-@media only screen and (max-width: 500px)
-{
+@media only screen and (max-width: 500px) {
+    .portfolio-content li {
+      width: 50%;
+      display: block;
+      float: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     .main-footer {
       height: 50%;
       padding: 20px;
